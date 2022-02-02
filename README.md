@@ -1,2 +1,4 @@
-# desafios-codelandia
-Desafios propostos pelo Iuri Code na comunidade do Discord
+# Desafios Codelândia
+Aqui publico meu código dos desafios propostos pelo [Iuri Code](https://www.instagram.com/iuricode/) na comunidade do Discord
+
+
