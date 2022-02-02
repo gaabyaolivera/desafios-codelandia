@@ -1,0 +1,132 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  a {
+      text-decoration: none;
+  }
+/* =================================================================== */
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(252.44deg, #1A1A1A 0%, #0A0A0A 100%);
+  }
+
+  header {
+      background: linear-gradient(264.64deg, #9859FF 0%, #6610F2 100%);
+      text-align: center;
+    }
+
+    header a{
+      font-family: 'Josefin Sans',sans-serif;
+      color: white;
+      font-size: 2rem;    
+    }
+
+    main {
+        text-align: center;
+        color: white;
+    }
+
+    .projetos {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        width: 80%;
+        margin: 2rem auto auto auto;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .titulo-projeto {
+        visibility: hidden;
+        position: absolute;
+        color: white;
+        font-weight: bold;
+    }
+
+    .card:hover .titulo-projeto {
+        visibility: visible;
+        padding: .4rem 1.5rem;
+        border: 1px solid white;
+    }
+
+    .card img:hover {
+        opacity: 18%;
+      }
+
+      .card:hover {
+        background-color: #7D53DE;
+        cursor: pointer;
+      }
+
+    footer { 
+        text-align: center;
+        margin-top: 2rem;
+        padding: .5rem;
+        font-size: 1rem;
+        color: #D1F5FF;
+        font-weight: bold;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .projetos {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+            width: 80%;
+            margin-top: 2rem;
+        }
+
+        header {
+            flex-direction: row;
+            gap: 0;
+        }
+
+        header a {
+            font-size: 1.5rem;
+        }
+    }

@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'DM Sans', open-sans;
+    background-color: #171717;
+    color: #F9F9F9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    margin-top: .7rem;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+header ul {
+    display: flex;
+}
+
+header a {
+    display: block;
+    padding: 1rem;
+    color: #F9F9F9;
+    font-weight: 400;
+}
+
+/* HERO */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.hero h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #F9F9F9;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    color: #828282;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+}
+
+.btn-cv {
+    background-color: #cb92d5;
+    color: #171717;
+    display: inline-block;
+    padding: .9rem;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-transparent {
+    color: #F9F9F9;
+    display: inline-block;
+    padding: .9rem;
+    margin-right: .5rem;
+    border: 2px solid #333333;
+}
+.hero img {
+    width: 350px;
+    position: relative;
+}
+
+/* SOBRE MIM */
+
+#sobre-mim, #projetos, #servicos, #minhas-skills > div {
+    text-align: center;
+}
+
+.subtitulo p {
+    width: 60%;
+    margin: auto;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.subtitulo h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.subtitulo p {
+    font-weight: 400;
+    color: #828282;
+    font-size: 1.11rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+.icones {
+    margin-bottom: 5rem;
+}
+
+.icon p {
+    margin-left: 0;
+}
+.icon figure {
+    background-color: #212121;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.first {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.second {
+    color: #828282;
+    font-weight: 400;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+/* PROJETOS */
+.cards-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+}
+.card {
+    background-color: #212121;
+    width: 350px;
+    height: 240px;
+    box-shadow:0px 0px 0px 1px #333 inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.cards-projetos .card h3 {
+    font-weight: 500;
+    margin-bottom: .2rem;
+    margin-top: 1rem;
+}
+
+.cards-projetos .card p {
+    font-weight: 400;
+    color: #828282;
+}
+
+.card h3, p {
+    align-self: flex-start;
+    margin-left: 25px;
+}
+.card img {
+    width: 300px;
+    height: 130px;
+    margin-bottom: .5rem;
+    object-fit: cover;
+
+}
+
+/* SERVIÇOS */
+.cards-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.skill {
+    background-color: #212121;
+    width: 350px;
+    height: 240px;
+    box-shadow:0px 0px 0px 1px #333 inset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid #cb92d5;
+    padding-left: 1.5rem;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    color: #828282;
+    font-weight: 500;
+    width: 30%;
+    text-align: left;
+    margin-top: 3rem;
+}
+.cards-servicos img{
+    width: 2rem;
+}
+
+/* MINHAS SKILLS */
+.cards-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+
+.skills {
+    background-color: #212121;
+    border: 1px solid #333;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills img {
+    width: 70px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #212121;
+    text-align: center;
+    height: 3rem;
+    padding: 1rem;
+}
+
+footer span {
+    color: #cb92d5;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 767px){
+
+    .hero-container {
+        flex-wrap: wrap-reverse;
+    }
+    .hero-container div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero-container p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .button a {
+        margin-bottom: 1rem;
+    }
+
+    .subtitulo p {
+        width: 100%;
+        margin: auto;
+    }
+}
