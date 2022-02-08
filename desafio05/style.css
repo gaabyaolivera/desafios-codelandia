@@ -1,0 +1,148 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+a {text-decoration: none;}
+
+li { list-style-type: none;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #628e75 0.66%, #1a4855 83.32%);
+    color: #F9F9F9;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+ul {
+    display: flex;
+}
+
+header a {
+    display: block;
+    padding: .7rem;
+}
+
+header a li img {
+    width: 1.5rem;
+}
+
+/* Main */
+
+main { 
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+main h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.2;
+    padding: 1rem 0 1rem 0;
+}
+
+main p {
+    font-weight: 400;
+    width: 28rem;
+    padding-bottom: 2rem;
+}
+
+/* Buttons */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button {
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+
+    background-color: #658E76;
+    width: 225px;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn .btn-trailer {
+    background-color: transparent;
+    outline: solid 2px #658E76;
+    margin-left: 1rem;
+}
+.btn-play img {
+    width: 10px;
+    margin-right: 7px;
+}
+.btn-play a, .btn-trailer a {
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+    color: #f9f9f9;
+    font-weight: bold;
+}
+main img {
+    width: 40%;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 801px) { 
+    header {
+        margin-bottom: 1rem;
+    }
+    main {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        justify-content: left;
+    }
+    .btn-trailer {
+        display: none;
+    }
+
+    main img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    header {
+        margin-bottom: 2rem;
+    }
+
+    main p {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main p {
+        width: fit-content;
+    }
+}
